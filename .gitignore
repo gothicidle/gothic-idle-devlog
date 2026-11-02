@@ -1,0 +1,20 @@
+# Allowlist: this repo is public, so ignore everything by default
+# and only let through text and finished artwork.
+# tools/, drafts/ and art-private/ stay local on purpose.
+*
+!*/
+
+!.gitignore
+!README.md
+!LICENSE
+!updates/*.md
+
+!art/**/*.png
+!art/**/*.gif
+!art/**/*.jpg
+!art/**/*.webp
+
+# Never publish work-in-progress or source files, even inside art/
+**/_raw/
+**/_rejected/
+**/_old*/
